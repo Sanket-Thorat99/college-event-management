@@ -2,7 +2,8 @@ const Event = require("../models/Event");
 
 const createEvent = async (req, res) => {
     try {
-
+        console.log(req.body);
+        console.log(req.user);
         const {
             title,
             description,
